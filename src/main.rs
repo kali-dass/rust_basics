@@ -123,6 +123,7 @@ fn main() {
     // below have 2 diff types
     //if condition {100} else {"200"};
 
+    //loop and break
     let mut van = 0;
     loop {
         van += 1;
@@ -131,6 +132,16 @@ fn main() {
             break;
         }
     }
+
+    println!("break return value");
+    let mut van1 = 0;
+    let van2 = loop {
+        van1 += 1;
+        if van1 >= 200000 {
+            break van1+1;
+        }
+    };
+    println!("loop expression value {van2}");
 
 }
 
