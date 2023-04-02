@@ -127,6 +127,9 @@ fn main() {
     loop {
         van += 1;
         println!("Vanshi is cool {van}");
+        if van == 200000 {
+            break;
+        }
     }
 
 }
