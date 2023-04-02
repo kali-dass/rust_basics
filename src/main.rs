@@ -123,6 +123,12 @@ fn main() {
     // below have 2 diff types
     //if condition {100} else {"200"};
 
+    let mut van = 0;
+    loop {
+        van = van +1;
+        println!("Vanshi is cool {van}");
+    }
+
 }
 
 //function call
