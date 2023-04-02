@@ -68,6 +68,10 @@ fn main() {
 
     another_function2(5);
 
+    another_function3(5,'k');
+
+    another_function4(5);
+
 }
 
 fn another_function(){
@@ -75,4 +79,18 @@ fn another_function(){
 }
 fn another_function2(x: i32) {
     println!("get the value {x}")
+}
+fn another_function3(x: i32, y: char) {
+    println!("get the value {x} , {y}")
+}
+fn another_function4(x: i32) {
+    // statement does not return a value so can not be used for assigning value
+    //let y = (let y=6);
+
+    let y = {
+        let m = x;
+        m+1
+    };
+
+    println!("value is {y}")
 }
