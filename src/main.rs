@@ -162,6 +162,14 @@ fn main() {
     }
     println!("end of count {count}");
 
+    // while loop
+    let mut numb1 = 3;
+
+    while numb1 !=0 {
+        println!("{numb1}");
+        numb1 -= 1;
+    }
+
 }
 
 //function call
