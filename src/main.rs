@@ -48,4 +48,7 @@ fn main() {
     let (x,y,z,a) = tup;
     println!(" The value of a is {a}");
 
+    let o = tup.0;
+    println!(" The value of tup is {o}");
+
 }
