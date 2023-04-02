@@ -88,6 +88,15 @@ fn main() {
     can be written here
      */
 
+    //if else
+    
+    let num = 3;
+    if num <5{
+        println!("condition true");
+    } else {
+        println!("condition false");
+    }
+
 }
 
 //function call
