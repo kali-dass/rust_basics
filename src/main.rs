@@ -61,6 +61,18 @@ fn main() {
     let arr2_1 = arr2[1];
     println!(" The value of arr2 is {arr2_1}");
 
-    let arr2_1 = arr2[7];
+    // get index out of bounds error on execution
+    //let arr2_1 = arr2[7];
 
+    another_function();
+
+    another_function2(5);
+
+}
+
+fn another_function(){
+    println!("In another function now")
+}
+fn another_function2(x: i32) {
+    println!("get the value {x}")
 }
