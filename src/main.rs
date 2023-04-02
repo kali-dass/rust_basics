@@ -43,4 +43,9 @@ fn main() {
     
     let c = 'Z';
     println!(" c {c}");
+
+    let tup: (u32, f64, u8, char) = (500, 2.0, 1, 'k');
+    let (x,y,z,a) = tup;
+    println!(" The value of a is {a}");
+
 }
