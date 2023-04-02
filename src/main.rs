@@ -127,8 +127,8 @@ fn main() {
     let mut van = 0;
     loop {
         van += 1;
-        println!("Vanshi is cool {van}");
         if van == 200000 {
+            println!("Vanshi is cool {van}");
             break;
         }
     }
@@ -142,6 +142,25 @@ fn main() {
         }
     };
     println!("loop expression value {van2}");
+
+    //multi loop label
+    let mut count = 0;
+    'count_outer: loop {
+        println!("count = {count}");
+        let mut remainng = 10;
+        loop{
+            println!("remainng {remainng}");
+            if remainng == 9 {
+                break;
+            }
+            if count == 2 {
+                break 'count_outer;
+            }
+            remainng -=1;
+        }
+        count +=1;
+    }
+    println!("end of count {count}");
 
 }
 
