@@ -88,9 +88,14 @@ fn main() {
     can be written here
      */
 
-    //if else
-    
     let num = 3;
+
+    // if
+    if num < 4 {
+        println!("condition true");
+    }
+
+    //if else
     if num <5{
         println!("condition true");
     } else {
