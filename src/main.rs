@@ -125,7 +125,7 @@ fn main() {
 
     let mut van = 0;
     loop {
-        van = van +1;
+        van += 1;
         println!("Vanshi is cool {van}");
     }
 
