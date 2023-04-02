@@ -25,4 +25,22 @@ fn main() {
     // specify data type
     let guess: u32 = "42".parse().expect("Not a number");
     println!(" guess {guess}");
+
+    let f = 2.0;
+    println!(" f {f}");
+
+    let f: f32 = 3.0;
+    println!(" f {f}");
+
+    let t = true;
+    println!(" t {t}");
+
+    let t: bool = false;
+    println!(" t {t}");
+
+    let c = 'z';
+    println!(" c {c}");
+    
+    let c = 'Z';
+    println!(" c {c}");
 }
