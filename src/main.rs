@@ -113,6 +113,15 @@ fn main() {
         println!("greater than or = 4");
     }
 
+    // if as expression
+    let condition = true;
+
+    let numb = if condition {100} else {200};
+    println!("value of expression {numb}");
+
+    //they need to be same expression
+    // below have 2 diff types
+    //if condition {100} else {"200"};
 
 }
 
