@@ -102,6 +102,18 @@ fn main() {
         println!("condition false");
     }
 
+    //if else if
+    if num <2{
+        println!("less than 2");
+    } else if num < 3  {
+        println!("less than 3");
+    } else if num < 4  {
+        println!("less than 4");
+    } else{
+        println!("greater than or = 4");
+    }
+
+
 }
 
 //function call
