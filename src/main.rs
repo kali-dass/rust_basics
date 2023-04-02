@@ -170,6 +170,12 @@ fn main() {
         numb1 -= 1;
     }
 
+    // for loop
+    let a = [10,20,22,30,40,55,60];
+    for element in a{
+        println!("values via for {element}");
+    }
+
 }
 
 //function call
