@@ -83,6 +83,11 @@ fn main() {
     let f = another_function5(5);
     println!("function return value {f}");
 
+    /*
+    Multiple lines comments
+    can be written here
+     */
+
 }
 
 //function call
