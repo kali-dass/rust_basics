@@ -176,6 +176,11 @@ fn main() {
         println!("values via for {element}");
     }
 
+    // for range
+    for elem in (1..4).rev() {
+        println!("range {elem}");
+    }
+
 }
 
 //function call
