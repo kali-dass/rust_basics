@@ -212,6 +212,10 @@ fn main() {
 
     println!("Original value still present as {x} in stack");
 
+    //return multiple values ownership
+    let (s4, len) = calculate_length(s3);
+    println!("The length of {} is {}", s4, len);
+
 }
 
 //function call
@@ -257,4 +261,9 @@ fn make_copy(x: i32){
 
 fn give_ownership(s2: String) -> String {
     s2
+}
+
+fn calculate_length(s3: String) -> (String, usize){
+    let len = s3.len();
+    (s3, len)
 }
