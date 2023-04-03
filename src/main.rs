@@ -188,6 +188,12 @@ fn main() {
     // this can not be done as now s1 is no longer aailable
     //println!("{s1}");
 
+    // clone copy
+    let s3 = String::from("Kalidass Test");
+    let s4 = s3.clone();
+
+    println!("s3 {s3}, s4 {s4}");
+
 
 }
 
