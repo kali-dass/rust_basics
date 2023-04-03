@@ -225,6 +225,12 @@ fn main() {
     //s5 not moved as ref passed
     println!("the length of '{}' is {} as only ref passed",s5,len1);
 
+    let mut s6 = String::from("Pass mutable reference example");
+
+    // there can be only 1 mutable ref 
+    change_refernce(&mut s6);
+    println!("The String '{}' is passed as mutable ref",s6);
+
 }
 
 //function call
@@ -282,9 +288,15 @@ fn calculate_length(s3: String) -> (String, usize){
     (s3, len)
 }
 
+// reference
 fn calculate_length1(s: &String) -> usize{
     //can not modify the string as it is only borrowed
     //s.push_str(", hello");
 
     s.len()
+}
+
+// mutable ref
+fn change_refernce(s: &mut String){
+    s.push_str(", test");
 }
