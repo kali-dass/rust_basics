@@ -216,6 +216,15 @@ fn main() {
     let (s4, len) = calculate_length(s3);
     println!("The length of {} is {}", s4, len);
 
+    // passing reference rather than move
+
+    let s5 = String::from("Pass reference example");
+
+    let len1 = calculate_length1(&s5);
+
+    //s5 not moved as ref passed
+    println!("the length of '{}' is {} as only ref passed",s5,len1);
+
 }
 
 //function call
@@ -230,6 +239,7 @@ fn another_function2(x: i32) {
 fn another_function3(x: i32, y: char) {
     println!("get the value {x} , {y}")
 }
+
 fn another_function4(x: i32) {
     // statement does not return a value so can not be used for assigning value
     //let y = (let y=6);
@@ -251,19 +261,30 @@ fn another_function5(x: i32) -> i32 {
     //x + 5;
 }
 
+// get ownership
 fn take_ownership(some_string: String){
     println!("{some_string}");
 }
 
+// copy created
 fn make_copy(x: i32){
     println!("Created a copy of {x}");
 }
 
+// return ownership
 fn give_ownership(s2: String) -> String {
     s2
 }
 
+// passing tuple response
 fn calculate_length(s3: String) -> (String, usize){
     let len = s3.len();
     (s3, len)
+}
+
+fn calculate_length1(s: &String) -> usize{
+    //can not modify the string as it is only borrowed
+    //s.push_str(", hello");
+
+    s.len()
 }
