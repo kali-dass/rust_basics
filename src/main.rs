@@ -231,6 +231,16 @@ fn main() {
     change_refernce(&mut s6);
     println!("The String '{}' is passed as mutable ref",s6);
 
+    //immutable reference, mutiple ref allowed
+    let s6 = String::from("immutable reference, mutiple ref allowed");
+    let r1 = &s6;
+    let r2 = &s6;
+
+    //mutable ref not allowed
+    //let r3 = &mut s6;
+
+    println!("{} | {} | {}", s6,r1,r2);
+
 }
 
 //function call
