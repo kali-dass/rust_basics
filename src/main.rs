@@ -181,6 +181,14 @@ fn main() {
         println!("range {elem}");
     }
 
+    // memory safety
+    let s1 = String::from("Kalidass");
+    let s2=s1;
+
+    // this can not be done as now s1 is no longer aailable
+    //println!("{s1}");
+
+
 }
 
 //function call
