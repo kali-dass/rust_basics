@@ -201,6 +201,11 @@ fn main() {
     //s is no longer available as it has been moved
     //println!("{s}");
 
+    // return ownership
+    let s2 = String::from("Kalidass return ownership");
+    let s3 = give_ownership(s2);
+    println!("Ownership returned to {s3}");
+
     let x = 5;
 
     make_copy(x);
@@ -248,4 +253,8 @@ fn take_ownership(some_string: String){
 
 fn make_copy(x: i32){
     println!("Created a copy of {x}");
+}
+
+fn give_ownership(s2: String) -> String {
+    s2
 }
