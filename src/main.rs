@@ -241,6 +241,17 @@ fn main() {
 
     println!("{} | {} | {}", s6,r1,r2);
 
+    //mutable ref after no more ref allowed
+    let mut s7 = String::from("mutable reference, mutiple ref allowed");
+    let r4 = &s7;
+    let r5 = &s7;
+    println!("{} | {} | {}", s7,r4,r5);
+
+    let r6 = &mut s7;
+    println!("{}",r6);
+    //not allowed
+    //println!("{} | {}",s7,r6);
+
 }
 
 //function call
