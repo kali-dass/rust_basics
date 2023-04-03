@@ -194,6 +194,18 @@ fn main() {
 
     println!("s3 {s3}, s4 {s4}");
 
+    //trasnfer ownership
+    let s = String::from("Kalidass transfer ownership");
+    take_ownership(s);
+    
+    //s is no longer available as it has been moved
+    //println!("{s}");
+
+    let x = 5;
+
+    make_copy(x);
+
+    println!("Original value still present as {x} in stack");
 
 }
 
@@ -228,4 +240,12 @@ fn another_function5(x: i32) -> i32 {
     x + 5
     // ending in ; will cause failure as that is statement and not expression
     //x + 5;
+}
+
+fn take_ownership(some_string: String){
+    println!("{some_string}");
+}
+
+fn make_copy(x: i32){
+    println!("Created a copy of {x}");
 }
