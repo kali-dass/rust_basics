@@ -252,6 +252,13 @@ fn main() {
     //not allowed
     //println!("{} | {}",s7,r6);
 
+    // using string slice
+    let str1 = String::from("hello world");
+    let hello = &str1[0..5];
+    let world = &str1[6..11];
+    //[..2] [6..] [..]uses default value
+    println!("{},{}, {}, {}",hello, world, &str1[..2], &str1[6..]);
+
 }
 
 //function call
